@@ -1,0 +1,25 @@
+Behavioral Biases in Trading: A Comprehensive Guide
+
+Loss Aversion
+Loss aversion is the tendency for traders to feel the pain of a loss approximately twice as strongly as the pleasure of an equivalent gain. This asymmetry, first identified by Kahneman and Tversky, causes traders to hold losing positions far longer than rational analysis would suggest, hoping for a recovery that often never comes. In trade data, loss aversion manifests as significantly longer holding durations for losing trades compared to winning trades. The cost is substantial: traders frequently turn small manageable losses into large drawdowns by refusing to cut positions. A loss aversion coefficient (lambda) above 2.0 indicates strong bias, while values near 1.0 suggest more rational loss processing.
+
+Disposition Effect
+The disposition effect is the tendency to sell winning positions too early and hold losing positions too long. It is closely related to loss aversion but specifically describes the asymmetric treatment of realized gains versus losses. In trade data, the disposition effect appears as a high ratio of realized gains to total gains (PGR) relative to the ratio of realized losses to total losses (PLR). A PGR/PLR ratio above 1.5 is considered a strong disposition effect. The cost is double: premature profit-taking limits upside capture, while delayed loss realization amplifies drawdowns.
+
+Overconfidence
+Overconfidence bias causes traders to overestimate the precision of their predictions and the quality of their information. Overconfident traders tend to trade more frequently, take larger positions, and diversify less. In trade data, overconfidence appears as increasing position sizes following winning streaks, higher trading frequency during periods of above-average returns, and a declining hit rate over time as the trader takes lower-quality setups. The cost includes excessive transaction costs, larger-than-warranted position losses, and portfolio concentration risk.
+
+Revenge Trading
+Revenge trading occurs when a trader attempts to immediately recover losses by taking impulsive follow-up trades, often with larger position sizes and less analytical rigor. In trade data, revenge trading manifests as a spike in trade frequency within 24 hours of a significant loss, a reduction in average holding duration during post-loss periods, and often increased position sizes. The cost is compounding losses: the emotional urgency to recover leads to lower-quality entries, and the larger position sizes amplify the damage when these trades also fail.
+
+Recency Bias
+Recency bias causes traders to overweight recent events relative to longer-term patterns. A trader who has experienced three consecutive winning trades may dramatically overestimate win probability, while three consecutive losses may lead to excessive caution. In trade data, recency bias shows up as position size correlating with recent P&L (increasing after wins, decreasing after losses) independently of signal quality. The cost is misallocated capital: taking too much risk after lucky streaks and too little after unlucky ones, both of which reduce long-term expected value.
+
+Anchoring Bias
+Anchoring occurs when traders fixate on a specific price point — often their entry price — and allow it to distort subsequent decisions. A trader anchored to a purchase price of 500 may refuse to sell at 480 even when the fundamental picture has deteriorated significantly. In trade data, anchoring appears as clustering of stop-loss or take-profit levels around round numbers or entry prices rather than at technically meaningful levels. The cost is irrational exit timing that ignores the current information environment.
+
+Herding Behavior
+Herding is the tendency to follow the crowd rather than independent analysis. Traders exhibiting herding behavior tend to enter popular momentum trades late and exit during panics. In trade data, herding appears as entry timing clustering around high-volume periods, strong correlation between trading direction and market-wide sentiment indicators, and higher losses during sentiment reversals. The cost is buying near tops and selling near bottoms, generating consistently negative alpha.
+
+Gambler's Fallacy
+The gambler's fallacy is the belief that a series of one outcome increases the probability of the opposite outcome. A trader with five consecutive losses may believe the sixth trade is "due" to be a winner, leading to increased position sizing on a statistically independent event. In trade data, this appears as increasing bet sizes after loss streaks without corresponding improvement in signal quality. The cost is accelerated drawdowns during losing periods and a failure to recognize that each trade has independent risk characteristics.

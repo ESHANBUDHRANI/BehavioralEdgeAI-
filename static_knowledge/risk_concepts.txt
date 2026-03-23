@@ -1,0 +1,25 @@
+Risk Concepts for Retail Traders
+
+Value at Risk (VaR)
+Value at Risk estimates the maximum expected loss over a specified time period at a given confidence level. A daily VaR of -3% at the 95th percentile means that on 95 out of 100 trading days, losses should not exceed 3%. VaR is useful for setting position limits and comparing risk across different strategies. However, VaR does not describe the magnitude of losses beyond the threshold — for that, Conditional VaR is needed. Traders should compute VaR on their own return distribution rather than assuming normality, since trading returns are typically fat-tailed.
+
+Conditional Value at Risk (CVaR)
+Also called Expected Shortfall, CVaR measures the average loss in the worst (1 - confidence) percent of scenarios. If VaR 95% is -3%, CVaR 95% might be -5%, meaning that when losses exceed VaR, the expected loss is 5%. CVaR is a more conservative risk measure that penalizes tail risk. Traders with high CVaR relative to VaR have fat-tailed return distributions, indicating occasional large losses that dominate their risk profile. Reducing CVaR requires either cutting tail exposure through stop losses or reducing position sizing in high-volatility regimes.
+
+Maximum Drawdown
+Maximum drawdown is the largest peak-to-trough decline in portfolio equity. It measures the worst sustained loss a trader has experienced. A maximum drawdown of 25% means the portfolio fell 25% from its highest point before recovering. Maximum drawdown is psychologically important because most traders abandon strategies or make behavioral errors during deep drawdowns. A useful rule of thumb: design your strategy to have a maximum drawdown you can tolerate emotionally, then halve the target — actual drawdowns in live trading typically exceed backtest expectations.
+
+Sharpe Ratio
+The Sharpe ratio measures risk-adjusted return: excess return over the risk-free rate divided by standard deviation of returns. A Sharpe ratio above 1.0 is generally considered good for a discretionary trader, and above 2.0 is excellent. Low Sharpe ratios suggest that returns are being earned with excessive volatility, making the strategy fragile. Traders can improve Sharpe by either increasing win rate, increasing average win size relative to average loss, or reducing return volatility through better position sizing and regime awareness.
+
+Tail Risk
+Tail risk refers to the probability of extreme outcomes far beyond what a normal distribution would predict. Financial return distributions exhibit fat tails and negative skewness, meaning large losses are more common than a bell curve implies. For retail traders, tail risk materializes as gap-down events, flash crashes, or liquidity crises that overwhelm stop-loss orders. Managing tail risk involves limiting maximum position size, diversifying across uncorrelated instruments, and maintaining a cash buffer to survive extreme events.
+
+Stress Testing
+Stress testing involves simulating portfolio performance under extreme but plausible scenarios — such as a 2008-style market crash, a sudden interest rate spike, or sector-specific collapse. For behavioral trading analysis, stress testing also includes behavioral stress: how does the trader's decision-making change when experiencing a 15% drawdown? Historical analysis can reveal whether the trader's worst biases (revenge trading, overconfidence) intensify under stress, which is critical for designing a robust risk management framework.
+
+Kelly Criterion for Position Sizing
+The Kelly criterion calculates the optimal fraction of capital to risk on each trade to maximize long-term growth: f* = (bp - q) / b, where b is the win-loss ratio, p is the probability of winning, and q = 1 - p. In practice, most traders use fractional Kelly (typically 0.25 to 0.5 of the full Kelly fraction) because the full Kelly sizing produces uncomfortably large drawdowns. The Kelly criterion requires accurate estimates of win probability and payoff ratio, which behavioral biases like overconfidence tend to distort upward.
+
+Risk-Reward Ratio Principles
+The risk-reward ratio compares the potential loss to the potential gain of a trade. A 1:3 ratio means the trader risks 1 unit to gain 3 units. Positive expectancy requires that (win_rate * average_win) > (loss_rate * average_loss). Even a strategy with only 30% win rate can be highly profitable if the average win is 4x the average loss. Traders should evaluate their personal risk-reward distribution from trade data and ensure it aligns with their target win rate. Behavioral biases like the disposition effect directly erode risk-reward by capping gains and extending losses.
